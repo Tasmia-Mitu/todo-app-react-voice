@@ -1,0 +1,49 @@
+.settingsContainer {
+  background-color: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.permissionButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.permissionButton:hover {
+  background-color: #3e8e41;
+}
+
+.permissionGranted {
+  color: #166534;
+  font-weight: 600;
+}
+
+.timeSelect {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #c6f6d5;
+  background-color: white;
+  cursor: pointer;
+}
+
+.timeSelect:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.5);
+}

@@ -1,0 +1,49 @@
+/* AppName.module.css */
+.container {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.heading {
+    font-weight: 800; /* Extra bold */
+    font-size: 3.5rem;
+    color: #14532d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 2.5rem;
+    animation: bounce 1.5s infinite;
+}
+
+.text {
+    background: linear-gradient(to right, #166534, #22c55e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 0 10px;
+}
+
+.underline {
+    height: 4px;
+    width: 150px;
+    background: linear-gradient(to right, #86efac, #166534, #86efac); 
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.heading:hover .icon {
+    transform: rotate(360deg);
+    transition: all 0.5s ease;
+}

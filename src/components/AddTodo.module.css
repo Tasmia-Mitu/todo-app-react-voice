@@ -1,0 +1,96 @@
+.formContainer {
+  /* background-color: #dcfce7; */
+  background-image: linear-gradient(to right, #86efac, #166534, #86efac);
+  border: 2px solid #86efac;
+}
+.inputWrapper {
+  position: relative; /* Add this */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between input and voice button */
+}
+
+.textInput {
+  flex: 1;
+  align-items: left;
+  border-radius: 12px;
+  padding: 14px 20px;
+  padding-right: 50px;
+  border: 2px solid #4CAF50;
+  background-color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.textInput:focus {
+  border-color: #166534;
+  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.4);
+  background-color: #f0fdf4;
+  outline: none;
+}
+.voiceButtonWrapper {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+.dateInput {
+  border-radius: 12px;
+  padding: 14px 20px;
+  border: 2px solid #4CAF50;
+  background-color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.dateInput:focus {
+  border-color: #166534;
+  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.4);
+  background-color: #f0fdf4;
+  outline: none;
+  color: #1e293b;
+}
+
+.dateInput:not(:focus):not(:placeholder-shown) {
+  color: #1e293b;
+}
+
+.addButton {
+  background: linear-gradient(to right, #4ade80, #15803d); /* light to dark green */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.addButton:hover {
+  background: linear-gradient(to right, #22c55e, #166534);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.addButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.addIcon {
+  font-size: 1.25rem;
+}
